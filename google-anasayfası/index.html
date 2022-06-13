@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Google</title>
+</head>
+<body>
+
+    <!-- bize verilen jpg adresini girdik -->
+    <div class="img">
+        <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="">
+    </div>
+
+
+<!-- arama çubuğunun olduğu kısmı div ile oluşturup css için class verdik. başlığı h3 ile yapmak istedim. -->
+<div class="arama">
+    <h3>Search the web using Google!</h3>
+    <input type="search" size="45" >
+    <br>
+    <button>Google Search</button>
+    <button>I'm feeling lucky</button>
+</div>
+
+    <!-- aarama çubuğunun altında kalacak olan 3 tane kutuyu bir div içine yerleştirdim. -->
+    <!-- flex özelliği ile bu div leri yana yana getirebileceğim--> 
+
+<div class="flex">
+    <div class="solAlt">
+        <p>Special Searches</p>
+        <p><a href="#">Stanford Search</a></p>
+        <p><a href="#">Linux Search</a></p>
+    </div>
+    
+   
+    <div class="orta">
+        <p><a href="#">Help</a></p>
+        <p><a href="#">About Google!</a></p>
+        <p><a href="#">Company İnfo</a></p>
+        <p><a href="#">Google! Logos</a></p>
+    </div>
+
+<!-- mail adresi girilecek yere kullanıcının görebilmesi için value ile mail giriniz oluşturdum -->
+    <div class="mail">
+        <p>Get Google!</p>
+        <p>uptades montly:</p>
+        <input type="email" name="mail" size="25" value="your e-mail" ><br>
+        <button>Subscribe</button>
+        <!-- burada span kullanmamın nedeni ne p ile ne de h etiketleriyle yazamadım butonun yanına yazıyı -->
+        <!-- sadece span ile yapınca oldu. hep butonun aşağısında kalıyordu. -->
+        <span><a href="#">Archive</a></span>
+    </div>
+    
+</div>
+
+<!-- alt kısımda yazılan yazı footer ile oluşturulur, ben de öyle yaptım -->
+<footer class="footer">
+    Copyright &copy 1998 Google Inc.
+</footer>
+    
+
+</body>
+</html>
